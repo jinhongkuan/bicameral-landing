@@ -48,7 +48,7 @@ There's a name for misalignment between business intent and codebase implementat
 
 Hammering coding agents on existing codebases doesn't solve the problem, because contrary to what the label "tech debt" may suggest, most tech debt isn't actually created in the IDE, _it's created in product meetings_. Deadlines. Scope cuts. "Ship now, optimize later." Those decisions shape the system, but the reasoning rarely makes it into the code.
 
-> "[Engineers] occasionally have access to complete data; at other times, they must work with limited information. They might be conscious of uncertainties surrounding their evidence, but frequently they are not. Competing social, financial, and strategic priorities influence the tradeoffs in unexpected ways." — [Rios et al., 2024](https://arxiv.org/abs/2403.06484)
+> [Engineers] occasionally have access to complete data; at other times, they must work with limited information. They might be conscious of uncertainties surrounding their evidence, but frequently they are not. Competing social, financial, and strategic priorities influence the tradeoffs in unexpected ways. — [Rios et al., 2024](https://arxiv.org/abs/2403.06484)
 
 How can we make this context-sharing and decision-making process less chaotic? We surveyed developers across different roles and team sizes regarding their product-engineering handoff process. The results were overwhelming: the majority discover unexpected codebase constraints weekly, after already committing to a product direction and the corresponding architectural implementation. When asked what would help most, two themes dominated:
 

@@ -4,10 +4,10 @@
 
 <div class="h-full flex flex-col items-center justify-center -mt-16">
   <!-- Hero Section -->
-  <div class="text-center max-w-2xl">
+  <div class="text-center max-w-3xl">
     <!-- Brain Icon -->
     <svg
-      class="w-28 h-28 text-emerald-700 mx-auto mb-8"
+      class="w-40 h-40 text-emerald-700 mx-auto mb-10"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -21,24 +21,24 @@
     </svg>
 
     <!-- Title -->
-    <h1 class="text-5xl font-semibold text-emerald-950 tracking-tight mb-4">
+    <h1 class="text-7xl font-semibold text-emerald-950 tracking-tight mb-6">
       Bicameral
     </h1>
 
     <!-- Tagline -->
-    <p class="text-xl text-emerald-800 mb-3">
+    <p class="text-2xl text-emerald-800 mb-4">
       Bringing delight to developers
     </p>
 
     <!-- Features -->
-    <p class="text-sm text-emerald-600 mb-10">
+    <p class="text-lg text-emerald-600 mb-12">
       Product Context · Tech Debt · Gap Detection
     </p>
 
     <!-- CTA Links -->
-    <div class="flex items-center justify-center gap-6 text-sm">
+    <div class="flex items-center justify-center gap-8 text-base">
       <a
-        href="/blog"
+        href="/blog/introducing-bicameral"
         class="text-emerald-700 font-medium hover:text-emerald-950 underline underline-offset-4 transition-colors"
       >
         Read our manifesto

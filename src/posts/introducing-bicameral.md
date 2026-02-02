@@ -38,15 +38,15 @@ Consider how developers spend their time ([IDC, 2024](https://www.infoworld.com/
 
 <img src="/images/developer-time-2024.svg" alt="How developers spend their time in 2024" style="max-width: 500px; width: 100%; display: block; margin: 0 auto;" />
 
-Only 16% of a developer's time goes to writing code. The rest? Security reviews, CI/CD pipelines, monitoring, deployments, requirements clarification—operational work that keeps the lights on but doesn't ship features.
+Only 16% of a developer's time goes to writing code. The rest? Security and code reviews, monitoring, deployments, requirements clarification—operational work that keeps the lights on but doesn't ship features.
 
-Here's the irony: AI coding assistants save developers roughly 10 hours per week, but the increase in process inefficiencies almost entirely cancelled out such gains ([Atlassian, 2025](https://www.atlassian.com/blog/developer/developer-experience-report-2025)). Here's a comment from the earlier cited Redditor.
+Here's the irony: AI coding assistants save developers roughly 10 hours per week, but the increase in inefficiencies in the other parts of the development lifecycle almost entirely cancelled out such gains ([Atlassian, 2025](https://www.atlassian.com/blog/developer/developer-experience-report-2025)). Here's a comment from the earlier cited Redditor.
 
 > They produce legitimate-looking code, and if no one has had the experience of thinking through the assumptions and then writing them into code - considering the edge cases- it’ll be lgtm’d and shipped. You’re shifting the burden of this feedback cycle to the right, after the code is output, and that makes us worse off since code is tougher to read than write.
 
 There's a name for misalignment between business intent and codebase implementation: technical debt. The use of coding agents without careful delineation of their scope and responsibilities is threatening to accelerate tech debt accumulation.
 
-Hammering coding agents on existing codebases doesn't solve the problem, because contrary to what the label "tech debt" may suggest, most tech debt isn't actually created in the code, _it's created in product meetings_. Deadlines. Scope cuts. "Ship now, optimize later." Those decisions shape the system, but the reasoning rarely makes it into the code.
+Hammering AI code generation on existing codebases doesn't solve the problem, because contrary to what the label "tech debt" may suggest, most tech debt isn't actually created in the code, _it's created in product meetings_. Deadlines. Scope cuts. "Ship now, optimize later." Those decisions shape the system, but the reasoning rarely makes it into the code.
 
 > [Engineers] occasionally have access to complete data; at other times, they must work with limited information. They might be conscious of uncertainties surrounding their evidence, but frequently they are not. Competing social, financial, and strategic priorities influence the tradeoffs in unexpected ways. — [Rios et al., 2024](https://arxiv.org/abs/2403.06484)
 

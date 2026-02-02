@@ -1,7 +1,7 @@
 ---
 title: Coding assistants are solving the wrong problem
 subtitle: Why we need bots that elicit good discussions, not just write better code
-date: "2025-01-15"
+date: "2026-02-02"
 ---
 
 The jury is out on the effectiveness of AI use in production, and it is not a pretty picture.
@@ -10,7 +10,7 @@ The jury is out on the effectiveness of AI use in production, and it is not a pr
 - Experienced developers were 19% slower when using AI coding assistants—yet believed they were faster ([METR, 2025](https://metr.org/blog/2025-01-13-measuring-ai-ability-to-complete-long-tasks/))
 - 48% of AI-generated code contains security vulnerabilities ([Apiiro, 2024](https://apiiro.com/blog/4x-velocity-10x-vulnerabilities-ai-coding-assistants-are-shipping-more-risks/))
 
-To understand why, we have to take a closer look at the day-to-day software development. Consider this point raised in [this colorful exchange](https://www.reddit.com/r/ExperiencedDevs/comments/1qq8y8u/comment/o2f1f0b/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) on r/ExperiencedDev:
+To understand why, we have to take a closer look at the day-to-day software development. Consider this point raised in [a colorful exchange](https://www.reddit.com/r/ExperiencedDevs/comments/1qq8y8u/comment/o2f1f0b/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) on r/ExperiencedDev:
 
 > A developers' job is to reduce ambiguity. We take the business need and outline its logic precisely so a machine can execute. The act of writing the code is the easy part. Odds are, you aren't creating perfect code specs into tickets, even with meeting notes, because developers will encounter edge cases that demand clarification over the course of implementation...
 

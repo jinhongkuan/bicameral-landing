@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340">
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #064e3b; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #6b7280; }
+    .label { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; fill: #374151; }
+    .center-text { font-family: system-ui, -apple-system, sans-serif; font-size: 24px; font-weight: 700; fill: #064e3b; }
+    .center-label { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; fill: #6b7280; }
+  </style>
+
+  <!-- Title -->
+  <text x="180" y="28" text-anchor="middle" class="title">How Developers Spend Their Time</text>
+  <text x="180" y="44" text-anchor="middle" class="subtitle">Source: IDC, 2024</text>
+
+  <!-- Donut chart: center (180,175), outer r=110, inner r=65 -->
+  <!-- Using stroke-based donut for accuracy -->
+
+  <g transform="translate(180, 175)">
+    <!-- Background circle -->
+    <circle r="87.5" fill="none" stroke="#f3f4f6" stroke-width="45"/>
+
+    <!-- Segments using stroke-dasharray: circumference = 2πr = 549.78 -->
+    <!-- Each 1% = 5.4978 units -->
+
+    <!-- UX: 10% (starts at 0) -->
+    <circle r="87.5" fill="none" stroke="#78716c" stroke-width="45"
+            stroke-dasharray="54.98 494.8"
+            transform="rotate(-90)"/>
+
+    <!-- Infrastructure: 11% -->
+    <circle r="87.5" fill="none" stroke="#a8a29e" stroke-width="45"
+            stroke-dasharray="60.48 489.3"
+            transform="rotate(-54)"/>
+
+    <!-- Deploying: 12% -->
+    <circle r="87.5" fill="none" stroke="#d6d3d1" stroke-width="45"
+            stroke-dasharray="65.97 483.8"
+            transform="rotate(-14.4)"/>
+
+    <!-- App monitoring: 12% -->
+    <circle r="87.5" fill="none" stroke="#e7e5e4" stroke-width="45"
+            stroke-dasharray="65.97 483.8"
+            transform="rotate(28.8)"/>
+
+    <!-- CI/CD: 12% -->
+    <circle r="87.5" fill="none" stroke="#d6d3d1" stroke-width="45"
+            stroke-dasharray="65.97 483.8"
+            transform="rotate(72)"/>
+
+    <!-- Security: 13% -->
+    <circle r="87.5" fill="none" stroke="#a8a29e" stroke-width="45"
+            stroke-dasharray="71.47 478.3"
+            transform="rotate(115.2)"/>
+
+    <!-- Requirements: 14% -->
+    <circle r="87.5" fill="none" stroke="#78716c" stroke-width="45"
+            stroke-dasharray="76.97 472.8"
+            transform="rotate(162)"/>
+
+    <!-- Developing apps: 16% (highlighted) -->
+    <circle r="87.5" fill="none" stroke="#10b981" stroke-width="45"
+            stroke-dasharray="87.96 461.8"
+            transform="rotate(212.4)"/>
+
+    <!-- Center text -->
+    <text x="0" y="6" text-anchor="middle" class="center-text">16%</text>
+    <text x="0" y="22" text-anchor="middle" class="center-label">coding</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(320, 70)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#10b981"/>
+    <text x="16" y="9" class="label">Developing apps (16%)</text>
+
+    <rect x="0" y="20" width="10" height="10" rx="2" fill="#78716c"/>
+    <text x="16" y="29" class="label">Requirements &amp; tests (14%)</text>
+
+    <rect x="0" y="40" width="10" height="10" rx="2" fill="#a8a29e"/>
+    <text x="16" y="49" class="label">Security (13%)</text>
+
+    <rect x="0" y="60" width="10" height="10" rx="2" fill="#d6d3d1"/>
+    <text x="16" y="69" class="label">CI/CD processes (12%)</text>
+
+    <rect x="0" y="80" width="10" height="10" rx="2" fill="#e7e5e4"/>
+    <text x="16" y="89" class="label">App monitoring (12%)</text>
+
+    <rect x="0" y="100" width="10" height="10" rx="2" fill="#d6d3d1"/>
+    <text x="16" y="109" class="label">Deploying code (12%)</text>
+
+    <rect x="0" y="120" width="10" height="10" rx="2" fill="#a8a29e"/>
+    <text x="16" y="129" class="label">Infrastructure (11%)</text>
+
+    <rect x="0" y="140" width="10" height="10" rx="2" fill="#78716c"/>
+    <text x="16" y="149" class="label">User experience (10%)</text>
+  </g>
+
+</svg>

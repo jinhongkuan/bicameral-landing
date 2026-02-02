@@ -46,7 +46,7 @@ Here's the irony: AI coding assistants save developers roughly 10 hours per week
 
 There's a name for misalignment between business intent and codebase implementation: technical debt. The use of coding agents without careful delineation of their scope and responsibilities is threatening to accelerate tech debt accumulation.
 
-Hammering coding agents on existing codebases doesn't solve the problem, because contrary to what the label "tech debt" may suggest, most tech debt isn't actually created in the IDE, _it's created in product meetings_. Deadlines. Scope cuts. "Ship now, optimize later." Those decisions shape the system, but the reasoning rarely makes it into the code.
+Hammering coding agents on existing codebases doesn't solve the problem, because contrary to what the label "tech debt" may suggest, most tech debt isn't actually created in the code, _it's created in product meetings_. Deadlines. Scope cuts. "Ship now, optimize later." Those decisions shape the system, but the reasoning rarely makes it into the code.
 
 > [Engineers] occasionally have access to complete data; at other times, they must work with limited information. They might be conscious of uncertainties surrounding their evidence, but frequently they are not. Competing social, financial, and strategic priorities influence the tradeoffs in unexpected ways. — [Rios et al., 2024](https://arxiv.org/abs/2403.06484)
 

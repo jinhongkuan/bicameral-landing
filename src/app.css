@@ -56,3 +56,15 @@ html, body {
 .prose a:hover {
   color: #047857;
 }
+
+/* Responsive image grid */
+.prose div[style*="display: flex"] {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .prose div[style*="display: flex"] img {
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+}

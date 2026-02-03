@@ -84,16 +84,16 @@
 </script>
 
 <div class="max-w-2xl mx-auto">
-  <h1 class="text-3xl font-semibold text-emerald-950 mb-2">Contact</h1>
-  <p class="text-emerald-700 mb-8">
+  <h1 class="text-2xl md:text-3xl font-semibold text-emerald-950 mb-2">Contact</h1>
+  <p class="text-sm md:text-base text-emerald-700 mb-6 md:mb-8">
     Have a complaint on engineering processes? Came across a post that captures your concerns? We want to hear it!
   </p>
 
-  <form onsubmit={handleSubmit} class="space-y-6">
+  <form onsubmit={handleSubmit} class="space-y-5 md:space-y-6">
     <!-- Contact Details -->
     <div class="space-y-3">
-      <label class="block text-emerald-900 font-medium">Contact Details</label>
-      <div class="flex gap-6">
+      <label class="block text-emerald-900 font-medium text-sm md:text-base">Contact Details</label>
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-6">
         <label class="flex items-center gap-2 cursor-pointer">
           <input
             type="radio"
@@ -130,7 +130,7 @@
 
     <!-- Nature of Problem -->
     <div class="space-y-3">
-      <label class="block text-emerald-900 font-medium">Nature of Problem</label>
+      <label class="block text-emerald-900 font-medium text-sm md:text-base">Nature of Problem</label>
       <select
         bind:value={problemNature}
         class="w-full px-4 py-2.5 border border-emerald-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white text-emerald-800"
@@ -145,8 +145,8 @@
 
     <!-- Input Type Toggle -->
     <div class="space-y-3">
-      <label class="block text-emerald-900 font-medium">Share Your Thoughts</label>
-      <div class="flex gap-6 mb-3">
+      <label class="block text-emerald-900 font-medium text-sm md:text-base">Share Your Thoughts</label>
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-6 mb-3">
         <label class="flex items-center gap-2 cursor-pointer">
           <input
             type="radio"

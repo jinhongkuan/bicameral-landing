@@ -78,7 +78,7 @@ Our thesis is that LLMs could be a huge boon _both_ for the industry and for ind
 
 If you're a developer, we want to learn which types of context hurt most when they're missing from discussion, based on your unique experience.
 
-Survey link: https://lnkd.in/eTN3hvVN
+Survey link: https://form.typeform.com/to/w4rPXoPD
 
 ---
 

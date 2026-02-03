@@ -1,9 +1,11 @@
 <script lang="ts">
   import '../app.css';
   import { page } from '$app/stores';
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
 
   let { children } = $props();
   let mobileMenuOpen = $state(false);
+  let newsletterOpen = $state(false);
 
   const navItems = [
     { href: '/', label: 'Home' },
@@ -29,21 +31,29 @@
       </svg>
       <span class="text-lg font-semibold text-emerald-900">Bicameral</span>
     </a>
-    <button
-      onclick={() => mobileMenuOpen = !mobileMenuOpen}
-      class="p-2 text-emerald-700 hover:text-emerald-900"
-      aria-label="Toggle menu"
-    >
-      {#if mobileMenuOpen}
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      {:else}
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      {/if}
-    </button>
+    <div class="flex items-center gap-2">
+      <button
+        onclick={() => newsletterOpen = true}
+        class="px-3 py-1.5 text-sm bg-emerald-600 hover:bg-emerald-700 text-white rounded-md transition-colors"
+      >
+        Subscribe
+      </button>
+      <button
+        onclick={() => mobileMenuOpen = !mobileMenuOpen}
+        class="p-2 text-emerald-700 hover:text-emerald-900"
+        aria-label="Toggle menu"
+      >
+        {#if mobileMenuOpen}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        {:else}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        {/if}
+      </button>
+    </div>
   </header>
 
   <!-- Mobile Menu Dropdown -->
@@ -86,7 +96,16 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="flex-1 p-4 md:p-10">
+  <main class="flex-1 p-4 md:p-10 relative">
+    <!-- Desktop Subscribe Button -->
+    <button
+      onclick={() => newsletterOpen = true}
+      class="hidden md:block absolute top-10 right-10 px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md transition-colors"
+    >
+      Subscribe to updates
+    </button>
     {@render children()}
   </main>
 </div>
+
+<NewsletterSignup bind:open={newsletterOpen} />

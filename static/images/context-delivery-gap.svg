@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240">
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 600; fill: #1a1a2e; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #6b7280; }
+    .source { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; fill: #9ca3af; }
+    .bar-label { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #374151; }
+    .bar-pct { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 600; fill: #374151; }
+    .bracket-label { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 600; }
+    .bracket-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 9.5px; fill: #6b7280; }
+    .insight { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 500; fill: #374151; }
+  </style>
+
+  <!-- Title -->
+  <text x="260" y="24" text-anchor="middle" class="title">Who needs to know about technical constraints?</text>
+  <text x="260" y="42" text-anchor="middle" class="source">n=40 engineers surveyed, Feb 2026</text>
+
+  <!-- Bar: Whole team — 40% -->
+  <text x="158" y="80" text-anchor="end" class="bar-label">Whole team (Design, QA, stakeholders)</text>
+  <rect x="164" y="68" width="192" height="18" rx="3" fill="#3b82f6"/>
+  <text x="364" y="82" class="bar-pct" fill="#3b82f6">40%</text>
+
+  <!-- Bar: Engineering + PM — 30% -->
+  <text x="158" y="110" text-anchor="end" class="bar-label">Engineering + PM</text>
+  <rect x="164" y="98" width="144" height="18" rx="3" fill="#60a5fa"/>
+  <text x="316" y="112" class="bar-pct" fill="#60a5fa">30%</text>
+
+  <!-- Bar: Just engineering — 18% -->
+  <text x="158" y="140" text-anchor="end" class="bar-label">Just engineering</text>
+  <rect x="164" y="128" width="86" height="18" rx="3" fill="#d6d3d1"/>
+  <text x="258" y="142" class="bar-pct" fill="#78716c">18%</text>
+
+  <!-- Bar: Other / depends — 12% -->
+  <text x="158" y="170" text-anchor="end" class="bar-label">Other / depends</text>
+  <rect x="164" y="158" width="58" height="18" rx="3" fill="#e7e5e4"/>
+  <text x="230" y="172" class="bar-pct" fill="#9ca3af">12%</text>
+
+  <!-- Bracket for whole team + eng+PM = 70% -->
+  <line x1="400" y1="72" x2="400" y2="112" stroke="#1e40af" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="400" y1="72" x2="404" y2="72" stroke="#1e40af" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="400" y1="112" x2="404" y2="112" stroke="#1e40af" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="400" y1="92" x2="410" y2="92" stroke="#1e40af" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="416" y="88" class="bracket-label" fill="#1e40af">70%</text>
+  <text x="416" y="100" class="bracket-sub">extends beyond</text>
+  <text x="416" y="112" class="bracket-sub">engineering</text>
+
+  <!-- Bottom insight -->
+  <line x1="20" y1="198" x2="500" y2="198" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="260" y="218" text-anchor="middle" class="insight">
+    <tspan font-weight="700" fill="#1e40af">7 in 10</tspan>
+    <tspan> technical constraints need to reach people who don't read code.</tspan>
+  </text>
+</svg>

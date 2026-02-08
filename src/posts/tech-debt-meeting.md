@@ -57,7 +57,7 @@ This is further aggravated by fragmented documentation of decisions made upon di
 - 25% mention verbally — no written record at all
 - 35% of all constraint communication leaves no persistent artifact
 
-In summary, the crux of developer frustrations lies in communication friction. Developers intuit problems that might arise but either can't effectively get that across to those making product decisions, or lack the evidence to make their case stick, both of which they know will be far more costly to deal with downstream (repeated conversations and reworks).
+In summary, the crux of developer frustrations lies in communication friction. Developers intuit problems that might arise but either struggle to effectively get that across to those making product decisions, or lack the evidence to make their case stick, both of which they know will be far more costly to deal with downstream (repeated conversations and reworks).
 
 The message we received is loud and clear: what is needed is not another code analysis or documentation tool, but _ammunition_ to drive cross-functional alignment upstream.
 

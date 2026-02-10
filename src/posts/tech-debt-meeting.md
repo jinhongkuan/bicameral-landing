@@ -1,7 +1,7 @@
 ---
 title: Why "just prompt better" doesn't work
 subtitle: How coding assistants get in the way of constraints discovery
-date: "2026-02-06"
+date: "2026-02-09"
 ---
 
 Earlier this week we published ["Coding assistants are solving the wrong problem"](https://news.ycombinator.com/item?id=46866481), which made it to the HackerNews front page and drew responses from developers across industries and roles.

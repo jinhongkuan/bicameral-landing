@@ -87,7 +87,7 @@
         id="newsletter-title"
         class="text-xl md:text-2xl font-semibold text-emerald-950 mb-2"
       >
-        Subscribe to updates
+        Subscribe to Newsletter
       </h3>
       <p class="text-sm md:text-base text-emerald-700 mb-6">
         Get notified when we publish new posts.

@@ -13,6 +13,8 @@
     { href: '/contact', label: 'Contact' }
   ];
 
+  let isBlog = $derived($page.url.pathname.startsWith('/blog'));
+
   // Close mobile menu on navigation
   $effect(() => {
     $page.url.pathname;
@@ -32,12 +34,26 @@
       <span class="text-lg font-semibold text-emerald-900">Bicameral</span>
     </a>
     <div class="flex items-center gap-2">
-      <button
-        onclick={() => newsletterOpen = true}
-        class="px-3 py-1.5 text-sm bg-emerald-600 hover:bg-emerald-700 text-white rounded-md transition-colors"
-      >
-        Subscribe
-      </button>
+      {#if isBlog}
+        <a
+          href="/rss.xml"
+          target="_blank"
+          rel="noopener"
+          class="p-1.5 text-emerald-600 hover:text-emerald-800 transition-colors"
+          aria-label="RSS Feed"
+        >
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="6.18" cy="17.82" r="2.18"/>
+            <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+          </svg>
+        </a>
+        <button
+          onclick={() => newsletterOpen = true}
+          class="px-3 py-1.5 text-sm bg-emerald-600 hover:bg-emerald-700 text-white rounded-md transition-colors"
+        >
+          Subscribe
+        </button>
+      {/if}
       <button
         onclick={() => mobileMenuOpen = !mobileMenuOpen}
         class="p-2 text-emerald-700 hover:text-emerald-900"
@@ -97,13 +113,29 @@
 
   <!-- Main Content -->
   <main class="flex-1 p-4 md:p-10 relative">
-    <!-- Desktop Subscribe Button -->
-    <button
-      onclick={() => newsletterOpen = true}
-      class="hidden md:block absolute top-10 right-10 px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md transition-colors"
-    >
-      Subscribe to updates
-    </button>
+    <!-- Desktop Subscribe + RSS (blog only) -->
+    {#if isBlog}
+      <div class="hidden md:flex absolute top-10 right-10 items-center gap-2">
+        <button
+          onclick={() => newsletterOpen = true}
+          class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md transition-colors"
+        >
+          Subscribe to Newsletter
+        </button>
+        <a
+          href="/rss.xml"
+          target="_blank"
+          rel="noopener"
+          class="p-2 text-emerald-600 hover:text-emerald-800 transition-colors"
+          aria-label="RSS Feed"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="6.18" cy="17.82" r="2.18"/>
+            <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+          </svg>
+        </a>
+      </div>
+    {/if}
     {@render children()}
   </main>
 </div>

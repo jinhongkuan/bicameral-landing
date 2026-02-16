@@ -1,5 +1,9 @@
 <script lang="ts">
   import { blogs } from '$lib/blogs';
+  import { page } from '$app/state';
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+
+  let showNewsletter = $state(page.url.searchParams.has('subscribe'));
 </script>
 
 <div class="max-w-4xl">
@@ -24,3 +28,5 @@
     {/each}
   </div>
 </div>
+
+<NewsletterSignup bind:open={showNewsletter} />

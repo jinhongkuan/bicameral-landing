@@ -34,8 +34,9 @@ const allBlogs: BlogEntry[] = Object.entries(posts)
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-export const blogs: BlogEntry[] = allBlogs.filter(b => b.published);
+export const blogs: BlogEntry[] = allBlogs;
+export const publishedBlogs: BlogEntry[] = allBlogs.filter(b => b.published);
 
 export function getBlogBySlug(slug: string): BlogEntry | undefined {
-  return blogs.find(blog => blog.slug === slug);
+  return allBlogs.find(blog => blog.slug === slug);
 }

@@ -33,20 +33,12 @@ This calls for some housekeeping. We decided to deprecate all the research docs 
 
 <img src="/images/github-galore.png" alt="Cleaning up our docs" style="max-width: 200px; width: 100%; display: block; margin: 0 auto;" />
 
-Instead, we adapted our documentation to fit our needs: creating bite-sized decision docs for each subcomponent and keeping repo-level docs clear of implementational details. Doing so allowed us to trust the output more, and moreover forced us to evaluate the relevance of previous decisions while prompting.
-
 Context engineering as a practice has gotten a lot of attention lately, so we will link two perspectives that guided our approach:
 
 - [Inside Claude Code With Its Creator Boris Cherny](https://youtu.be/PQU9o_5rHC4?si=9CCXBJDM7FilGJyP&t=540)
 - [Delete your CLAUDE.md](https://www.youtube.com/watch?v=GcNu6wrLTJc)
 
-We also experimented with end-to-end coding assistants (we use Conductor) that specs, codes and tests new features all in one go, but found that it very quickly creates a dependence relationship that makes future updates unpredictable.
-
-Sticking to good ol' prompting on the other hand allowed us to inject context that is strictly necessary for the task, do some preliminary sanity checks, and have visibility over the agent's thought process (the diff streaming feature of Codex is very much appreciated).
-
-<img src="/images/codex-diff.png" alt="Codex surfacing code diffs" style="max-width: 800px; width: 100%; display: block; margin: 0 auto;" />
-
-In summary, we found that knowing exactly what we are feeding into agents makes a big difference in the reliability of outcomes, and that is achieved either through specific references in manual prompting, or putting module-level docs in place for agent discovery.
+The converging opinion on context management is that less is more. Hence, we created bite-sized decision docs for each subcomponent and keeping repo-level docs clear of implementational details. Doing so allowed us to trust the output more, and moreover forced us to evaluate the relevance of previous decisions while prompting.
 
 It is more likely for agents to be derailed by stale designs than for it to come up with smarter solutions because of additional context.
 
@@ -94,17 +86,15 @@ It is akin to taking a blood-test on the codebase: the generated code is meant t
 
 ### A new plane of collaboration?
 
-The irony stands clearly for us throughout this process: a tool is supposed to enhance one's workflow in the domain that it is marketed for, yet we find ourselves bending over backwards to adapt to the tool.
-
-In fact, realizing that AI assistants excel in initial research & eventual implementation - but not in between - led us to adopt a rather curious workflow internally:
+Realizing that AI assistants excel in initial research & eventual implementation - but not in between - led us to adopt a rather curious workflow internally:
 
 <img src="/images/two-pass-development.png" alt="Cleaning up our docs" style="max-width: 700px; width: 100%; display: block; margin: 0 auto;" />
 
-Specifically, we would first create a main tech spec, branch it off and do some prototyping on our own, using this opportunity to discover and document constraints, before merging our individual works back into the overall tech spec (dashed line). Doing so uncovers the nooks and crannies of planned integration and allows us to have decide on trade-offs ahead of time.
+Specifically, we would first create a main tech spec, branch it off (dashed line) and do some prototyping on our own, using this opportunity to discover and document constraints, before merging our individual works back into the overall tech spec. Doing so uncovers the nooks and crannies of planned integration and allows us to have decide on trade-offs ahead of time.
 
 It is only after that first iteration do we branch off again for the second time (solid line) to implement the actual code for components we are each responsible for. We found that doing so significantly reduces the frequency of hiccups in code review.
 
-**All-in-all, our findings suggest that effective AI use requires devs to spend more time doing what they usually find tedious (documentation & coordination), and less of what they enjoy doing (problem-solving). What a twist!**
+The irony however did not escape us: **effective AI use requires devs to spend more time doing what they usually find tedious (documentation & coordination), and less of what they enjoy doing (problem-solving). What a twist!**
 
 Since we are currently a team of two, adapting our workflow to fit AI needs is straightforward enough, but we are well-aware of the politics and conventions that devs in established teams have to contend with (to the folks on [r/ExperiencedDevs](https://www.reddit.com/r/ExperiencedDevs/) - we hear you!).
 

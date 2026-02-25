@@ -92,8 +92,6 @@ Concretely, the way we applied this learning was to make room for an explicit "p
 
 It is akin to taking a blood-test on the codebase: the generated code is meant to be discarded, yet it provides the backdrop against which potential integration challenges are surfaced and informs our design conversations.
 
-> You don't know what you want. That's why asking questions doesn't work. You think you know it, but only after you've spent some time iterating in the space of solutions, you'll see the path forward.
-
 ### A new plane of collaboration?
 
 The irony stands clearly for us throughout this process: a tool is supposed to enhance one's workflow in the domain that it is marketed for, yet we find ourselves bending over backwards to adapt to the tool.
@@ -112,11 +110,11 @@ Since we are currently a team of two, adapting our workflow to fit AI needs is s
 
 This is what Bicameral is set out to solve. We aim to address the SDLC hurdles that make naive adoption of AI codegen a source of recurring headache for developers.
 
-Our first product serves as a "crystal ball" that effectively automates the first-pass prototyping described above, surfacing integration challenges ahead of time so that context that "lives in head" of core devs and PMs can be translated into explicit decisions for the context-hungry coding agents. This frees up developers to engage in fruitful design conversations rather than get bogged down reviewing AI slop.
-
 ### V0 Release
 
-Our first release is due sometime next week - we are finishing up security audits currently - and our newsletter subscribers and survey takers will automatically be whitelisted for early access (all LLM spend is on us!).
+Our first product serves as a "crystal ball" that effectively automates the first-pass prototyping described above, surfacing integration challenges ahead of time so that context that "lives in head" of core devs and PMs can be translated into explicit decisions for the context-hungry coding agents. This frees up developers to engage in fruitful design conversations rather than get bogged down reviewing AI slop.
+
+We will be releasing it sometime next week once we have completed security audits, and our newsletter subscribers and survey takers will automatically be whitelisted for early access (all LLM spend is on us!).
 
 Below is a short demo of the product (we currently only support Mac + local codebase, with planned support for different environments/security parameters):
 

@@ -4,6 +4,7 @@ export interface BlogEntry {
   subtitle: string;
   date: string;
   published: boolean;
+  visible: boolean;
   content: ConstructorOfATypedSvelteComponent;
 }
 
@@ -14,6 +15,7 @@ type MdModule = {
     subtitle: string;
     date: string;
     published?: boolean;
+    visible?: boolean;
   };
 };
 
@@ -29,13 +31,15 @@ const allBlogs: BlogEntry[] = Object.entries(posts)
       subtitle: module.metadata.subtitle,
       date: module.metadata.date,
       published: module.metadata.published !== false,
+      visible: module.metadata.visible !== false,
       content: module.default
     };
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-export const blogs: BlogEntry[] = allBlogs.filter(b => b.published);
+export const blogs: BlogEntry[] = allBlogs.filter(blog => blog.visible);
+export const publishedBlogs: BlogEntry[] = allBlogs.filter(b => b.published);
 
 export function getBlogBySlug(slug: string): BlogEntry | undefined {
-  return blogs.find(blog => blog.slug === slug);
+  return allBlogs.find(blog => blog.slug === slug);
 }

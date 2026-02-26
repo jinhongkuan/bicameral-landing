@@ -108,11 +108,11 @@ Since we are currently a team of two, adapting our workflow to fit AI needs is s
 
 This is what Bicameral sets out to solve. We aim to address the SDLC hurdles that make naive adoption of AI codegen a source of recurring headaches for developers.
 
-### V0 Release
+<h3 id="v0-release">V0 Release</h3>
 
 Our first product serves as a "crystal ball" that effectively automates the first-pass prototyping described above, surfacing integration challenges ahead of time so that context that "lives in the heads" of core devs and PMs can be translated into explicit decisions for context-hungry coding agents. This frees up developers to engage in fruitful design conversations rather than get bogged down reviewing AI slop.
 
-We will be releasing it sometime next week once we have completed security audits, and our newsletter subscribers and survey takers will automatically be whitelisted for early access (all LLM spend is on us!).
+We will be releasing it sometime next week once we have completed security audits, and our newsletter subscribers and survey takers at the time of release will automatically be whitelisted for early access (all LLM spend is on us!).
 
 Below is a short demo of the product (we currently only support Mac + a local codebase, with planned support for different environments/security parameters):
 
@@ -132,6 +132,6 @@ As we prepare to launch Bicameral, we have our eyes on the next challenge, one t
 
 > One could counter with, "Why 'just meet better' doesn't work." ("Stakeholders" are not comfortable with the required level of detail and lack in-depth business, operational, and technical domain knowledge.)
 
-We are mindful that there are conflicting interests and varying expertise levels at play, and whatever information we add to the mix must be strictly geared toward adding signal and reducing noise for all parties involved.
+We are mindful that there are conflicting interests and varying expertise levels at play, and whatever information we add to the mix must be strictly geared toward _adding signal and reducing noise_ for all parties involved.
 
 If you have opinions about what kind of data points would actually move the needle in cross-functional team meetings, we would love to hear them on our [Google Group](https://groups.google.com/g/bicameral). You may also reach us directly via the Contact page!

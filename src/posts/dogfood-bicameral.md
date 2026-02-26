@@ -3,6 +3,7 @@ title: Less is More when it comes to AI
 subtitle: How we applied SDLC learnings to dogfood Bicameral
 date: "2026-02-25"
 published: true
+visible: true
 ---
 
 **We will be releasing our first prototype soon, with open access for early subscribers/contributors. [More details below](#v0-release).**

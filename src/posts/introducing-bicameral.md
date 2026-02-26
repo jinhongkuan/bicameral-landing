@@ -3,6 +3,7 @@ title: Coding assistants are solving the wrong problem
 subtitle: Why we need bots that elicit good discussions, not just write better code
 date: "2026-02-02"
 published: true
+visible: true
 ---
 
 The jury is out on the effectiveness of AI use in production, and it is not a pretty picture.

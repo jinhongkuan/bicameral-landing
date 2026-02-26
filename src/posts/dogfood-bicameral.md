@@ -1,8 +1,8 @@
 ---
 title: Less is More when it comes to AI
 subtitle: How we applied SDLC learnings to dogfood Bicameral
-date: "2026-02-20"
-published: false
+date: "2026-02-25"
+published: true
 ---
 
 **We will be releasing our first prototype soon, with open access for early subscribers/contributors. [More details below](#v0-release).**
@@ -13,7 +13,7 @@ Throughout this process, we used AI codegen extensively, and probably committed 
 
 <img src="/images/process-dogfood.png" alt="Our SDLC mistakes while building Bicameral" style="max-width: 800px; width: 100%; display: block; margin: 0 auto;" />
 
-This process taught us an important lesson: ruthlessly guarding noise vs signal consumption and production is crucial when it comes to effective AI tool use.
+This process taught us an important lesson: ruthlessly guarding noise vs signal production is crucial when it comes to effective AI tool use.
 
 So in a space overcrowded with flashy tools, we will dedicate this article to outlining AI best practices that worked for us _without_ relying on more tools.
 
@@ -87,7 +87,7 @@ The researchers found that the "generation-then-comprehension" style of AI use l
 
 Concretely, the way we applied this learning was to make room for an explicit "prototype" phase between spec and implementation - where we give these state-of-the-art models free rein to implement their recommended approach, and then query them on each successive design choice they made and the trade-offs they were comparing.
 
-We are careful to treat this as part of the planning phase, and discard the first round of output. Only after we have familiarized ourselves with the the implicit decisions made by AI and specified our holistic judgment for each (the design phase), do we rewrite the prompt from scratch and ship the generated code.
+We are careful to treat this as part of the planning phase, and discard the first round of output. Only after we have familiarized ourselves with the implicit decisions made by AI and specified our holistic judgment for each (i.e. partake in the _design_ process), do we rewrite the prompt from scratch with the added context and ship the generated code.
 
 ### A new plane of collaboration?
 
@@ -102,7 +102,7 @@ Specifically,
 
 Doing so uncovers the nooks and crannies of planned integration and allows us to decide on trade-offs ahead of time, reducing the frequency of hiccups in code review.
 
-The irony, however, did not escape us: **effective AI use requires devs to spend more time doing what they usually find tedious (documentation & coordination), and less of what they enjoy doing (problem-solving).**
+The irony, however, did not escape us: **effective AI use requires devs to spend more time doing what they usually find tedious (documentation & coordination), and less of what they excel at (problem-solving).**
 
 Since we are currently a team of two, adapting our workflow to fit AI needs is straightforward enough, but we are well aware of the politics and conventions that devs in established teams have to contend with (to the folks on [r/ExperiencedDevs](https://www.reddit.com/r/ExperiencedDevs/) - we hear you!).
 
